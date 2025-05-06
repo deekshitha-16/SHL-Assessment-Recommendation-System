@@ -12,3 +12,7 @@ transformers==4.36.2
 python-dotenv
 fastapi
 uvicorn
+torch==<latest_version>
+transformers==<latest_version>
+streamlit==<latest_version>
+
