@@ -1,6 +1,19 @@
 import streamlit as st
 import pandas as pd
 from query_functions import query_handling_using_LLM_updated
+import asyncio
+import streamlit as st
+
+# Your async function (if any)
+async def some_async_function():
+    await asyncio.sleep(1)
+    st.write("Async function executed!")
+
+# Only run async code if no event loop is already running
+if not asyncio.get_event_loop().is_running():
+    asyncio.run(some_async_function())
+else:
+    st.write("Event loop is already running!")
 
 st.set_page_config(page_title="SHL Assessment Recommendation System", layout="centered")
 
